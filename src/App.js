@@ -23,11 +23,11 @@ function App() {
         console.log(userAuth);
       }else{
         //LOGGED OUT
-        dispatch(logout)
+        dispatch(logout())
       }
     })
     return unsubscribe;
-  },[])
+  },[dispatch])
   return (
     <div className="app">  
       <Router>
